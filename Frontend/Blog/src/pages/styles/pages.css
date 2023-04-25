@@ -1,0 +1,282 @@
+:root {
+    --ff-alata: 'Alata', sans-serif;
+    --ff-josefin: 'Josefin Sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+  
+    --clr-primary-200: hsl(0 0% 100%);
+  
+    --border-radius: 7.5rem;
+  }
+
+.input {
+    text-align: center;
+
+    margin: 2.5rem 0 5rem 0;
+}
+
+.input__search {
+    font-family: var(--ff-alata);
+    letter-spacing: 0.05rem;
+    width: 80vw;
+    max-width: 80vw;
+
+    padding-block: 0.5rem;
+    padding-inline: 0.75rem;
+}
+
+.blogs {
+    margin-bottom: 3.75rem;
+}
+
+.blogs a {
+    text-decoration: none;
+
+    color: black;
+}
+
+.blogs__title,
+.single-blog__title {
+    font-family: var(--ff-poppins);
+    font-size: 2.25rem;
+    text-decoration: none;
+}
+
+.blogs__date,
+.single-blog__date {
+    font-family: var(--ff-josefin);
+    font-size: 1.25rem;
+
+    margin-block: 0.25rem;
+}
+
+.blogs__content,
+.single-blog__content {
+    font-family: var(--ff-poppins);
+    font-weight: lighter;
+    font-size: 1.125rem;
+
+    margin-top: 1.5rem;
+}
+
+.single-blog-container {
+    margin-block: 5rem;
+}
+
+.comment-length {
+    font-family: var(--ff-poppins);
+    font-size: 2rem;
+
+    margin-block: 0.75rem;
+}
+
+.comments__input-container {
+     margin-bottom: 7rem;
+}
+
+.comment__name {
+    font-family: var(--ff-josefin);
+}
+
+.comment__comment {
+    font-family: var(--ff-poppins);
+    font-weight: lighter;
+
+    margin-bottom: 1rem;
+}
+
+.comment__name > span {
+    font-family: var(--ff-poppins);
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.comments__input-container > h4 {
+    font-family: var(--ff-poppins);
+    font-size: 1.5rem;
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: hsl(0 0% 0% / 0.6);
+}
+
+.comment__input-comment,
+.comment__input-name {
+    width: 100%;
+    border: none;
+
+    padding: 0.75rem 1rem;
+    background-color: #eeeeee;
+}
+
+.comments__input-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.comment__submit-btn {
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25rem;
+
+    padding: 0.75rem 1.5rem;
+    background-color: #343a40;
+    color: var(--clr-primary-200);
+}
+
+@media (min-width: 55em) {
+
+    .blogs-container,
+    .single-blog-container,
+    .comments-container,
+    .comments__input-container {
+        margin-left: 10rem;
+        margin-right: 5rem;
+    }
+
+    .comments {
+        margin-left: 3.5rem;
+    }
+
+}
+
+@media (max-width: 55em) {
+
+    .blogs-container,
+    .single-blog-container,
+    .comments-container,
+    .comments__input-container {
+        text-align: center;
+    }
+
+    .comments__input-container {        
+        margin-inline: 0.75rem;
+    }
+
+    .comment__submit-btn {
+        margin: 1rem auto;
+    }
+
+}
+
+.subscribe {
+    font-family: var(--ff-poppins);
+    font-size: 1.5rem;
+    text-align: center;
+
+    margin-bottom: 1.5rem;
+}
+
+.platforms {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.podcast {
+    margin-block: 7.5rem;
+    margin-inline: 2rem;
+}
+
+.podcasts {
+    border: 1.25px solid black;
+    border-radius: 0.5rem;
+    width: 15rem;
+    max-width: 15rem;
+
+    padding: 1rem 1.25rem;
+    margin-bottom: 7rem;
+}
+
+.podcasts > p  {
+    font-family: var(--ff-poppins);
+    font-size: 0.9rem;
+
+    margin-top: 1rem;
+}
+
+@media (min-width: 55em) {
+
+    .about {
+        margin-left: 10rem;
+        margin-right: 5rem;
+        margin-block: 5rem;
+    }
+
+}
+
+@media (max-width: 55em) {
+
+    .about {
+        text-align: center;
+        margin-inline: 2rem;
+        margin-block: 5rem;
+    }
+
+}
+
+.about {
+    font-family: var(--ff-poppins);
+    
+    margin-bottom: 7rem;
+}
+
+.about h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    margin-block: 0.5rem;
+    margin-top: 2rem;
+}
+
+.about p {
+    font-family: var(--ff-poppins);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.contact-main {
+    font-family: var(--ff-josefin);
+    margin-block: 7rem;
+}
+
+@media (min-width: 55em) {
+
+    .contact-main {
+        margin-left: 10rem;
+        margin-right: 5rem;
+    }
+
+}
+
+@media (max-width: 55em) {
+    
+    .contact-main {
+        text-align: center;
+    }
+
+}
+
+.contact > h2 {
+    font-family: var(--ff-poppins);
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.email {
+    margin-block: 2.5rem;
+}
+
+.email > h4 {
+    font-family: var(--ff-alata);
+    text-transform: uppercase;
+    opacity: 0.7;
+
+    margin-block: 0.75rem;
+}
+
+.email span {
+    font-family: var(--ff-poppins);
+    text-transform: uppercase;
+    opacity: 0.5;
+}
